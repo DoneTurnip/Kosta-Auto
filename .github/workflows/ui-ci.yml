@@ -12,18 +12,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        dotnet-version: [8.0]
-
     steps:
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      - name: Set up .NET SDK ${{ matrix.dotnet-version }}
+      - name: Set up .NET SDK 8.0
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: 8.0
 
       - name: Restore dependencies
         run: dotnet restore
