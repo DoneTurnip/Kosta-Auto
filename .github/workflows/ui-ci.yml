@@ -27,9 +27,12 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
+        working-directory: KostaUI
 
       - name: Build the Blazor app
         run: dotnet build --no-restore --configuration Release
+        working-directory: KostaUI
 
       - name: Run tests
         run: dotnet test --no-restore --configuration Release
+        working-directory: KostaUI
