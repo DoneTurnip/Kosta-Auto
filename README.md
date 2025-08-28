@@ -2,6 +2,9 @@
 
 Kosta Auto is a car part shop management system that allows users to manage car parts and their corresponding warehouses. This repository contains both the backend API built with Spring Boot and a frontend UI built using Blazor, allowing for seamless interaction with the system.
 
+> [!IMPORTANT]  
+> The MySQL server has been shut down in Google Cloud, so the project is unable to reach the data, that is stored in the cloud. Apart from that, everything is functional, only needs some data to work with. 
+
 ## Table of Contents
 
 - [Overview](#overview)
